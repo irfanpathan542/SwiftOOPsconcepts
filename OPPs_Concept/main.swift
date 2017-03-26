@@ -8,15 +8,6 @@
 
 import Foundation
 
-print("Hello, World!")
-
-//protocol protocolHuman {
-//    var name : String? {get}
-//    var address : String? {get}
-//    var cellNumber : Int? {get set}
-//    var age : Int! {get set}
-//}
-
 class human {
 
     let name : String!
