@@ -46,7 +46,7 @@ class human {
         }
         
         if let mynum = cellNumber,
-            let myAge = age, myAge > 18 && myAge < 30
+            let myAge = age where myAge > 18 && myAge < 30
             {
             print("cellNumber ==>> \(mynum)")
             print("myAge ==>> \(myAge)")
@@ -98,7 +98,7 @@ class student : human {
     }
     override func printDescription(message: String) {
         print("student ==>> \(message)")
-        super.printDescription(message: message)
+        super.printDescription(message)
 
     }
 }
@@ -113,6 +113,12 @@ class employee : human {
     }
 }
 
+
+var objHuman = human(name: "Irfan", address: "Ahmedabad", age: 54)
+
+objHuman.age = 22
+objHuman.cellNumber = 1231313
+
 //let object = student(name: "name", address: "address description")
 let object = student.init(name: "Bansi", address: "Ahmedabad",student_id: 9, standard: 9, subject: "English")
 
@@ -121,7 +127,7 @@ object.age = 25
 
 
 object.printDescription()
-object.printDescription(message: "Custom Message")
+object.printDescription("Custom Message")
 
 
 
